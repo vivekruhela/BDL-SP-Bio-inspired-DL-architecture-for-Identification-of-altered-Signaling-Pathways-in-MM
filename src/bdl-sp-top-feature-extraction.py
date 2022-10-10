@@ -321,9 +321,7 @@ def test(model, device, test_loader, show_perf = True):
     prec = precision_score(target2, pred2, average = 'weighted')
     rec = recall_score(target2, pred2, average = 'weighted')
     roc = roc_auc_score(target2, output_pred_prob.cpu()[:, 1], average='weighted')
-    mcc = matthews_corrcoef(target2, pred2)   
-    mgus_prec, mgus_rec,_= precision_recall_curve(target2, output_pred_prob1.cpu().numpy())
-    auc2 = auc(mgus_rec,mgus_prec)
+    mcc = matthews_corrcoef(target2, pred2)
 
     perf_mat = {'accuracy':acc,
                 'balanced_accuracy':acc_balanced,
@@ -343,8 +341,7 @@ def test(model, device, test_loader, show_perf = True):
                 'recall_MGUS': rec2,
                 'roc':roc,
                 'mcc': mcc,
-                'confusioin_matrix':cm,
-                'auc': auc2
+                'confusioin_matrix':cm
                }
     if show_perf:
         print(perf_mat)
