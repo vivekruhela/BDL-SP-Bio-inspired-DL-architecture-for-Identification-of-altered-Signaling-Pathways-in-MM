@@ -28,13 +28,13 @@ from torch_geometric.utils import add_self_loops, degree
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split, StratifiedKFold
-from sklearn.metrics import accuracy_score,confusion_matrix, f1_score,balanced_accuracy_score,precision_recall_curve, auc, PrecisionRecallDisplay, average_precision_score
+from sklearn.metrics import accuracy_score,confusion_matrix, f1_score,balanced_accuracy_score
 from sklearn.metrics import precision_score, recall_score, roc_auc_score, matthews_corrcoef,make_scorer, classification_report
 from sklearn.metrics import median_absolute_error, balanced_accuracy_score, precision_score, recall_score, f1_score
 
 # %%
 def set_seeds(seed_value, use_cuda):
-    random.seed(21624865)
+    random.seed(seed_value)
     np.random.seed(seed_value)  # cpu vars
     torch.manual_seed(seed_value)  # cpu  vars
     random.seed(seed_value)  # Python
