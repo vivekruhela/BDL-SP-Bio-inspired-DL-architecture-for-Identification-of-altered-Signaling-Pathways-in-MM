@@ -481,19 +481,19 @@ print('The mean ROC is                       :',np.mean(roc))
 # %%
 plt.figure(figsize=(20,6))
 
-a = pd.DataFrame(train_loss['fold_1']).rolling(40).mean().dropna().values.tolist()
+a = pd.DataFrame(train_loss['fold_1'])
 plt.plot(a,label='Fold-1 Train Loss')
 
-b = pd.DataFrame(train_loss['fold_2']).rolling(40).mean().dropna().values.tolist()
+b = pd.DataFrame(train_loss['fold_2'])
 plt.plot(b,label='Fold-2 Train Loss')
 
-c = pd.DataFrame(train_loss['fold_3']).rolling(40).mean().dropna().values.tolist()
+c = pd.DataFrame(train_loss['fold_3'])
 plt.plot(c,label='Fold-3 Train Loss')
 
-d = pd.DataFrame(train_loss['fold_4']).rolling(40).mean().dropna().values.tolist()
+d = pd.DataFrame(train_loss['fold_4'])
 plt.plot(d,label='Fold-4Train Loss')
 
-e = pd.DataFrame(train_loss['fold_4']).rolling(40).mean().dropna().values.tolist()
+e = pd.DataFrame(train_loss['fold_4'])
 plt.plot(e,label='FOld-5 Train Loss')
 plt.xticks(np.arange(0,350,10))
 # plt.yticks(np.arange(0,30,2))
@@ -505,19 +505,19 @@ plt.savefig('Training_Loss_Curve1.png', dpi = 400)
 # # %%
 plt.figure(figsize=(20,6))
 
-a = pd.DataFrame(test_loss['fold_1']).rolling(40).mean().dropna().values.tolist()
+a = pd.DataFrame(test_loss['fold_1'])
 plt.plot(a,label='Fold-1 Test Loss')
 
-b = pd.DataFrame(test_loss['fold_2']).rolling(40).mean().dropna().values.tolist()
+b = pd.DataFrame(test_loss['fold_2'])
 plt.plot(b,label='Fold-2 Test Loss')
 
-c = pd.DataFrame(test_loss['fold_3']).rolling(40).mean().dropna().values.tolist()
+c = pd.DataFrame(test_loss['fold_3'])
 plt.plot(c,label='Fold-3 Test Loss')
 
-d = pd.DataFrame(test_loss['fold_4']).rolling(40).mean().dropna().values.tolist()
+d = pd.DataFrame(test_loss['fold_4'])
 plt.plot(d,label='Fold-4 Test Loss')
 
-e = pd.DataFrame(test_loss['fold_5']).rolling(40).mean().dropna().values.tolist()
+e = pd.DataFrame(test_loss['fold_5'])
 plt.plot(e,label='Fold-5 Test Loss')
 plt.xticks(np.arange(0,350,10))
 # plt.yticks(np.arange(0,30,2))
