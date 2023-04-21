@@ -63,9 +63,11 @@ For model training, you need to follow the following steps in order to train the
 • Once you have the trained BDL-SP model, open `BDL_SP_SHAP_Analysis.ipynb`, `samplewise_shap_analysis.ipynb`, `shap_individual_feature_plot.ipynb` for group-level and sample-level post-hoc model explainability using SHAP algorithm.
 
 
-## 7. Authors
+## 7. Citation
 
-* **Vivek Ruhela** - *Initial work* - [github](https://github.com/vivekruhela)
+* If you use BDL-SP for your research, please cite the following paper:
+
+Ruhela, V., Lingraja, J., Kaur, G., Gupta, R. and Gupta, A. BDL-SP: A Bio-inspired DL model for the identification of altered Signaling Pathways in Multiple Myeloma using WES data. *Accepted in American Journal of Cancer Research (ajcr0148190)*
 
 
 ## 8. License
