@@ -6,3 +6,7 @@ xgboost
 catboost
 pickle
 matplotlib
+torch
+shap
+random
+warnings
