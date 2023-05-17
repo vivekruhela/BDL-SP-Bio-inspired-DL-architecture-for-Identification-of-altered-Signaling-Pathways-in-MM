@@ -67,7 +67,7 @@ For model training, you need to follow the following steps in order to train the
 
 * If you use BDL-SP for your research, please cite the following paper:
 
-Ruhela, V., Lingraja, J., Kaur, G., Gupta, R. and Gupta, A. BDL-SP: A Bio-inspired DL model for the identification of altered Signaling Pathways in Multiple Myeloma using WES data. *Accepted in American Journal of Cancer Research (ajcr0148190)*
+Ruhela, V., Jena, L., Kaur, G., Gupta, R. and Gupta, A., 2023. BDL-SP: A Bio-inspired DL model for the identification of altered Signaling Pathways in Multiple Myeloma using WES data. American Journal of Cancer Research, 13(4), p.1155.
 
 
 ## 8. License
